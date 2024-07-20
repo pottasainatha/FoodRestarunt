@@ -1,0 +1,120 @@
+/* Resetting defaults and global styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #fff; /* Set background color */
+  color: #333;
+  line-height: 1.6;
+}
+
+.header-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 1em 0;
+  background-color: rgba(255, 255, 255, 0.9);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.logoname {
+  height: 6vh;
+  width: auto;
+}
+
+.navbar-section ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex; /* Use flexbox to display items horizontally */
+}
+
+.navbar-section ul li {
+  margin-right: 20px; /* Adjust spacing between items as needed */
+}
+
+.navbar-section ul li a {
+  text-decoration: none;
+  color: #333;
+  padding: 10px;
+  display: block;
+  transition: color 0.3s ease;
+}
+
+.navbar-section ul li a:hover {
+  color: #FEA116; /* Change color on hover */
+}
+
+.reserve-table-button {
+  background-color: #FEA116;
+  color: #fff;
+  border: none;
+  padding: 0.8em 2em;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.reserve-table-button:hover {
+  background-color: #FFD966; /* Change background color on hover */
+}
+
+.rotating-image {
+  max-width: 100%;
+  height: auto;
+  animation: rotateImage 10s linear infinite; /* Animation for rotation */
+}
+
+@keyframes rotateImage {
+  from {
+      transform: rotate(0deg);
+  }
+  to {
+      transform: rotate(360deg);
+  }
+}
+
+.features-card-section {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-top: 2em;
+}
+
+.feature-card {
+  width: calc(25% - 20px); /* Adjusted width to accommodate spacing */
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  margin-bottom: 2em;
+}
+
+.feature-card:hover {
+  transform: translateY(-5px);
+}
+
+.feature-card img {
+  width: 100%;
+  height: auto;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.feature-card .card-content {
+  padding: 1em;
+}
+
+.feature-card .card-content h3 {
+  font-size: 1.5em;
+  margin-bottom: 0.5em;
+}
+
+.feature-card .card-content p {
+  font-size: 1em;
+  color: #666;
+}
